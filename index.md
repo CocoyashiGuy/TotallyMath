@@ -1,6 +1,6 @@
-## Welcome to GitHub Pages
+## Welcome to the Greatest Game Website Ever
 
-You can use the [editor on GitHub](https://github.com/DragonGray815/100-Ela/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+You can also go to [The All Purpose Website](https://sites.google.com/lpssonline.com/theallpurposewebsite/home) to play other games, some games may not work.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
