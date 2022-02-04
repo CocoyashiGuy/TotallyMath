@@ -2,36 +2,113 @@
 
 You can also go to [The All Purpose Website](https://sites.google.com/lpssonline.com/theallpurposewebsite/home) to play other games, some games may not work.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<!DOCTYPE html>
+<html lang="en">
 
-### Markdown
+<head>
+    <meta property="og:title" content="Totally Science">
+    <meta property="og:site_name" content="Totally Science">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="The best place for 'Learning Science!'">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://totallyscience.co/assets/images/logo.png">
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+    <title>Totally Science</title>
 
-```markdown
-Syntax highlighted code block
+    <!--Cache Killer-->
+    <script>
+        const html = document.getElementsByTagName('head')[0].innerHTML;
+        const title = document.getElementsByTagName('title')[0];
+        const indexCss = `<link rel='stylesheet' href='assets/styles/game.css?${new Date().getTime()}'>`;
+        let gameJS = document.createElement("script");
+        gameJS.src = `assets/scripts/load_game.js?${new Date().getTime()}`;
+        gameJS.defer = true;
+        gameJS.async = true;
+        title.insertAdjacentElement('afterend', gameJS);
 
-# Header 1
-## Header 2
-### Header 3
+        document.getElementsByTagName('head')[0].innerHTML += indexCss;
+    </script>
 
-- Bulleted
-- List
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <!--End Cache Killer-->
 
-1. Numbered
-2. List
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="icon" href="assets/images/logo.png">
 
-**Bold** and _Italic_ and `Code` text
+    <!--Google Adsense-->
+    <script data-ad-client="ca-pub-3486863589051210" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
 
-[Link](url) and ![Image](src)
-```
+<body>
+    <div id="navbar">
+        <div id="leftbar">
+            <div class="nav-button"><a href="index.html">Home</a></div>
+            <div class="nav-button selected"><a href="classes.html">Games</a></div>
+            <div class="nav-button"><a href="leaderboard.html">Leaderboard</a></div>
+            <div class="nav-button"><a href="browser.html">Browser</a></div>
+            <div class="nav-button"><a href="chat.html">Chat</a></div>
+        </div>
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+        <div id="middlebar">
+            <p>Totally Science</p>
+        </div>
 
-### Jekyll Themes
+        <div id="rightbar">
+            <a id="login" href="profile.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    </svg>
+            </a>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/DragonGray815/100-Ela/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+            <a id="settings" href="preferences.html"><img src="./assets/images/settings-light.svg"></img>
+            </a>
+        </div>
+    </div>
 
-### Support or Contact
+    <section id="game">
+        <div id="gameDiv">
+            <iframe class="iframeloader" src="" width="80vw" height="80vw" overflow="visible" frameBorder="0" id="game-iframe"></iframe>
+        </div>
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+        <button onclick="EnterFullscreen()"><img id="fullscreenImg" src="./assets/images/fullscreen-light.svg"></button>
+    </section>
+
+    <div align="center">
+        <!--Ad-->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3486863589051210" crossorigin="anonymous"></script>
+        <!-- Horizontal Ad -->
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3486863589051210" data-ad-slot="5628466741" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        <!--End Ad-->
+    </div>
+
+    <section id="desc">
+        <div class="grid-container">
+            <div>
+                <p class="mainText">Controls:</p>
+            </div>
+            <div>
+                <p class="mainText">Developer:</p>
+            </div>
+            <div>
+                <p id="controls" class="subText">...</p>
+            </div>
+            <div>
+                <p id="developer" class="subText">This game was created by...</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="report">
+        <p>Is this game not working? Let us know!</p>
+        <button id="report-btn">Report</button>
+    </section>
+
+    <script defer src="./assets/scripts/main.js?4"></script>
+</body>
+
+</html>
