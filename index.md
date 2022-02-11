@@ -7,50 +7,6 @@ You can also go to [The All Purpose Website](https://sites.google.com/lpssonline
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta property="og:title" content="Totally Science">
-    <meta property="og:site_name" content="Totally Science">
-    <meta property="og:url" content="">
-    <meta property="og:description" content="The best place for 'Learning Science!'">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://totallyscience.co/assets/images/logo.png">
-
-    <title>Totally Science</title>
-    <!--Cache Killer-->
-    <script>
-        const html = document.getElementsByTagName('head')[0].innerHTML;
-        const title = document.getElementsByTagName('title')[0];
-        const mainCSS = `<link rel='stylesheet' href='assets/styles/main.css?${new Date().getTime()}'>`;
-
-        const mainJS = document.createElement("script")
-        mainJS.src = `assets/scripts/main.js?${new Date().getTime()}`
-        title.insertAdjacentElement('afterend', mainJS)
-
-        document.getElementsByTagName('head')[0].innerHTML += mainCSS;
-    </script>
-
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
-    <!--End Cache Killer-->
-
-    <link rel="stylesheet" href="assets/styles/main.css">
-    <link rel="icon" href="assets/images/logo.png">
-
-    <!--Google Adsense-->
-    <script data-ad-client="ca-pub-3486863589051210" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-</head>
-
-<body>
-    <div id="navbar">
-        <div id="leftbar">
-            <div class="nav-button"><a href="index.html">Home</a></div>
-            <div class="nav-button"><a href="classes.html">Games</a></div>
-            <div class="nav-button"><a href="leaderboard.html">Leaderboard</a></div>
-            <div class="nav-button selected"><a href="">Browser</a></div>
-            <div class="nav-button"><a href="chat.html">Chat</a></div>
-        </div>
-
         <div id="middlebar">
             <p>Totally Science</p>
         </div>
